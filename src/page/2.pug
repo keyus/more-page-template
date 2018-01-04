@@ -1,0 +1,21 @@
+extends ./share/layouts
+include ./module/template
+
+block content
+  //section.loginapp(style="background-image: url('');")  自定义背景
+  section.loginapp()
+
+    //自定议logo图片
+    section.logo(style='')
+
+    section.login-form
+      div.login-item
+        span.iconfont.icon-zhanghao
+        input(type='input',placeholder='请输入您的帐号')
+      div.login-item
+        span.iconfont.icon-mima
+        input(type='password',placeholder='请输入您的密码')
+
+      div.login-handle
+        a() 注册
+        a() 忘记密码

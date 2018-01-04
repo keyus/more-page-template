@@ -1,0 +1,76 @@
+extends ./share/layouts
+include ./module/template
+
+block content
+  section.ibody
+    header.iheader
+      div.iheader-top
+        p 基金余额
+        strong 10000.00
+        section
+          span
+            i.iconfont.icon-jichutubiao_jiangli-copy
+            label 消费积分
+            em 2145
+          span
+            i.iconfont.icon-dengji
+            label 消费积分
+            em 消费商
+
+
+      div.iheader-menu
+        a
+          i.iconfont.icon-saoyisao
+          span 扫一扫
+        a
+          i.iconfont.icon-mingxi
+          span 充值
+        a
+          i.iconfont.icon-zhuanzhanghuikuan
+          span 转账
+        a
+          i.iconfont.icon-tixian
+          span 提现
+
+
+    //div.ibanner(style="background-image: url('../images/banner.jpg');")
+    div.ibanner
+    div.igrid.weui-grids
+      a.weui-grid
+        div.weui-grid__icon
+          span.iconfont.icon-erweima(style="color:#323e7a")
+        p.weui-grid__label 推广链接
+      a.weui-grid
+        div.weui-grid__icon
+          span.iconfont.icon-wodetuandui(style="color:#de8b45")
+        p.weui-grid__label 我的团队
+      a.weui-grid
+        div.weui-grid__icon
+          span.iconfont.icon-shouyi(style="color:#039240")
+        p.weui-grid__label 账单名细
+      a.weui-grid
+        div.weui-grid__icon
+          span.iconfont.icon-shangjia2(style="color:#dc241c")
+        p.weui-grid__label 商家中心
+      a.weui-grid
+        div.weui-grid__icon
+          span.iconfont.icon-jiangjin1(style="color:#f19b9e")
+        p.weui-grid__label 奖金基金
+      a.weui-grid
+        div.weui-grid__icon
+          span.iconfont.icon-kefu(style="color:#5bb136")
+        p.weui-grid__label 在线客服
+      a.weui-grid
+        div.weui-grid__icon
+          span.iconfont.icon-gerenziliao(style="color:#f1ba2a")
+        p.weui-grid__label 个人资料
+      a.weui-grid
+        div.weui-grid__icon
+          span.iconfont.icon-tuichu(style="color:#5aadb3")
+        p.weui-grid__label 退出系统
+
+
+
+  +tp-toolbar2
+
+

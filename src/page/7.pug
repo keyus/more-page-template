@@ -1,0 +1,28 @@
+extends ./share/layouts
+include ./module/template
+
+block content
+    +tp-header('提现')
+
+    section.body
+      div.pay
+        h2 当前可提现金额：
+          em 9520
+        div.input.after-solid
+          span ¥
+          input(type="number",placeholder='请输入提现金额')
+
+        div.pay-type
+          span.iconfont.icon-zhongguogongshangyinhang
+          span.name
+            em 中国工商银行
+            label 尾号0456
+          span.input
+            label.checkbox
+              input(type='checkbox' checked value=1)
+              i
+        div.pay-btn
+          button.btn-default 确认提现
+    +tp-toolbar
+
+

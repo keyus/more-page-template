@@ -1,0 +1,27 @@
+extends ./share/layouts
+include ./module/template
+
+block content
+    +tp-header('充值')
+
+    section.body
+      div.pay
+        h2 充值金额
+        div.input.after-solid
+          span ¥
+          input(type="number",placeholder='请输入金额')
+
+        div.pay-type
+          span.iconfont.icon-weixin1
+          span.name
+            em 微信支付
+            label 即时到账
+          span.input
+            label.checkbox
+              input(type='checkbox' checked value=1)
+              i
+        div.pay-btn
+          button.btn-default 确认充值
+    +tp-toolbar
+
+

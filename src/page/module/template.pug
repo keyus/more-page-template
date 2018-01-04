@@ -1,0 +1,43 @@
+mixin tp-header(name)
+    header.header
+      div.rel
+        h1=name
+          a.iconfont.icon-fanhui(href="javascript:;")
+mixin tp-header-search
+  header.header-search
+    div.rel
+      a.now
+        span 绵阳
+      div.search
+        i.iconfont.icon-xingtaiduICON_sousuo--
+        input(type="search")
+
+
+mixin tp-toolbar
+  footer.footer
+    a(href="javascript:;")
+      i.iconfont.icon-shangjia2
+      | 首页
+    a(href="javascript:;")
+      i.iconfont.icon-shangjia1
+      | 商家
+    a(href="javascript:;")
+      i.iconfont.icon-suanpan
+      | 财务
+    a(href="javascript:;")
+      i.iconfont.icon-wode
+      | 我的
+mixin tp-toolbar2
+  footer.footer.toolbar-white
+    a(href="javascript:;")
+      i.iconfont.icon-shangjia2
+      | 首页
+    a(href="javascript:;")
+      i.iconfont.icon-shangjia1
+      | 商家
+    a(href="javascript:;")
+      i.iconfont.icon-suanpan
+      | 财务
+    a(href="javascript:;")
+      i.iconfont.icon-wode
+      | 我的

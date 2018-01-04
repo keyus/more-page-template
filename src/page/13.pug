@@ -1,0 +1,51 @@
+extends ./share/layouts
+include ./module/template
+
+block content
+    +tp-header('商家中心')
+
+    section.body
+      //自定义背景图片url ps上无分层图
+      div.center-header(style="background-image: url('');")
+        div.center-header-menus
+          a()
+            i.iconfont.icon-tixian1
+            | 提现
+
+          a()
+            i.iconfont.icon-mingxi
+            | 明细
+
+        div.center-header-money
+          p 余额
+          strong 10000
+
+      div.weui-panel.comcenter
+        div.weui-panel__bd
+          div.weui-media-box.weui-media-box_small-appmsg
+            div.weui-cells
+              a.weui-cell.weui-cell_access(href="javascript:;")
+                div.weui-cell__bd.weui-cell_primary
+                  p 商家资料
+                span.weui-cell__ft
+            div.weui-cells
+              a.weui-cell.weui-cell_access(href="javascript:;")
+                div.weui-cell__bd.weui-cell_primary
+                  p 商家简介
+                span.weui-cell__ft
+            div.weui-cells
+              a.weui-cell.weui-cell_access(href="javascript:;")
+                div.weui-cell__bd.weui-cell_primary
+                  p 收入明细
+                span.weui-cell__ft
+            div.weui-cells
+              a.weui-cell.weui-cell_access(href="javascript:;")
+                div.weui-cell__bd.weui-cell_primary
+                  p 提现记录
+                span.weui-cell__ft
+
+
+
+    +tp-toolbar2
+
+

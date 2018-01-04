@@ -1,0 +1,52 @@
+extends ./share/layouts
+include ./module/template
+
+block content
+    +tp-header('注册')
+    section.body.body-style1
+      div.step
+        span.active 1.输入手机号码
+        label.iconfont.icon-return-copy
+        span 2.输入验证码
+        label.iconfont.icon-return-copy
+        span 3.设置密码
+
+      div.phone.before-solid
+        input(type='input',placeholder='请输入您的手机号码')
+
+      div.step-btn
+        button.btn-default 获取验证码
+
+      //step2
+      div.step
+        span 1.输入手机号码
+        label.iconfont.icon-return-copy
+        span.active 2.输入验证码
+        label.iconfont.icon-return-copy
+        span 3.设置密码
+
+      div.phone.before-solid
+        input(type='input',placeholder='请输入验证码')
+
+      div.step-btn
+        button.btn-default 设置密码
+
+      //step3
+      div.step
+        span 1.输入手机号码
+        label.iconfont.icon-return-copy
+        span 2.输入验证码
+        label.iconfont.icon-return-copy
+        span.active 3.设置密码
+
+      div.phone.before-solid
+        input(type='input',placeholder='请输入您的密码')
+
+      div.step-btn
+        button.btn-default 确认
+
+
+
+    +tp-toolbar2
+
+

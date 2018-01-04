@@ -1,0 +1,28 @@
+extends ./share/layouts
+include ./module/template
+
+block content
+    +tp-header('商家支付')
+
+    section.body
+      div.pay
+
+        div.pay-shang
+          span.iconfont.icon-shangjia
+          label 三只手火锅
+
+        h2 付款金额
+        div.input.after-solid
+          span ¥
+          input(type="number",placeholder='请输入金额')
+
+        div.weui-cells.weui-cells_form.pay-note
+          div.weui-cell
+            div.weui-cell__bd
+              textarea.weui-textarea(placeholder="添加备注(30字以内)")
+
+        div.pay-btn
+          button.btn-default 确认付款
+    +tp-toolbar
+
+

@@ -1,0 +1,22 @@
+extends ./share/layouts
+include ./module/template
+
+block content
+    +tp-header('转账')
+
+    section.body
+      div.pay
+        h2 付款金额
+          em 1920
+        div.input.input-accout.after-solid
+          span.iconfont.icon-gerenzhongxin
+          input(type="text", placeholder='请输入对方账号')
+        div.input.input-accout.after-solid
+          span.money ¥
+          input(type="number", placeholder='请输入转账金额')
+
+        div.pay-btn
+          button.btn-default 确认付款
+    +tp-toolbar
+
+

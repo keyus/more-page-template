@@ -1,0 +1,60 @@
+extends ./share/layouts
+include ./module/template
+
+block content
+    +tp-header('帐单名细')
+
+    section.body.body-style1
+      div.navbar.after-solid
+        span 分类
+
+      ul.card-list
+        li
+          div.card-list-l
+            span.iconfont.icon-jijinshuju.yellow-bg
+          div.card-list-m
+            h2 动态基金
+            div.tui [ 推荐张三三 ]
+            div
+              span.iconfont.icon-shijian
+              span.time  2017/02/28 13:25:21
+          div.card-list-r
+            span.num +50
+
+        li
+          div.card-list-l
+            span.iconfont.icon-jichutubiao_jiangli-copy.cyan-bg
+          div.card-list-m
+            h2 动态基金
+            div.tui [ 推荐张三三 ]
+            div
+              span.iconfont.icon-shijian
+              span.time  2017/02/28 13:25:21
+          div.card-list-r
+            span.num +50
+        li
+          div.card-list-l
+            span.iconfont.icon-fulifandian.red-bg
+          div.card-list-m
+            h2 动态基金
+            div.tui [ 推荐张三三 ]
+            div
+              span.iconfont.icon-shijian
+              span.time  2017/02/28 13:25:21
+          div.card-list-r
+            span.num.minus -210
+        li
+          div.card-list-l
+            span.iconfont.icon-xiaofei.green-bg
+          div.card-list-m
+            h2 动态基金
+            div.tui [ 推荐张三三 ]
+            div
+              span.iconfont.icon-shijian
+              span.time  2017/02/28 13:25:21
+          div.card-list-r
+            span.num +50
+
+    +tp-toolbar2
+
+

@@ -1,0 +1,12 @@
+import 'weui'
+import './scss/common.scss'
+
+import './images/test.png'
+import './images/banner.jpg'
+import './images/test2.jpg'
+import './images/test3.jpg'
+import './images/b3.jpg'
+import './images/b2.jpg'
+import './images/logo.png'
+import './images/06.jpg'
+import './images/14.jpg'

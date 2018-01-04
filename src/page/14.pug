@@ -1,0 +1,36 @@
+extends ./share/layouts
+include ./module/template
+
+block content
+  +tp-header('商家介绍')
+
+  section.body
+    div.sbanner
+      a(href="")
+    div.stitle.after-solid
+      h1 春天里春艳
+      span 支持外卖
+    div.scontact
+      p
+        span
+          i.iconfont.icon-dingdanzhifuye-dingwei
+          label 绵延火车站南2雄姿英发绵延火车站南2雄姿英发绵延火车站南2雄姿英发
+        span
+          i.iconfont.icon-dianhua
+          label 18030821470
+      span.phone
+        i.iconfont.icon-phone
+
+    div.scontent
+      div.scontent-intro
+        p 个人简介，是当事人全面而简洁地介绍自身情况的一种书面表达方式。求职过程中撰写的个人简介是求职者向欲供职单位全面、简洁、条理清晰地自我介绍、自我推荐的文书。简介是应用写作学研究的一种日常应用文体。
+      h2.scontent-bar 春天里春晏特色菜
+      p
+        img(src="./images/test2.jpg")
+      h2.scontent-bar 春天里春晏特色菜
+      p
+        img(src="./images/test2.jpg")
+
+  +tp-toolbar
+
+

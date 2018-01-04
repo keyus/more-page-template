@@ -1,0 +1,35 @@
+extends ./share/layouts
+include ./module/template
+
+block content
+    +tp-header('申请入驻')
+
+    section.body.body-style2
+      div.jion-body
+        div.weui-cells.weui-cells_form.join-form
+          div.weui-cell
+            div.weui-cell__bd
+              input.weui-input(type="text", placeholder="请输入店名")
+          div.weui-cell
+            div.weui-cell__bd
+              input.weui-input(type="text", placeholder="请输入地址")
+          div.weui-cell
+            div.weui-cell__bd
+              input.weui-input(type="text", placeholder="请输入电话")
+          div.weui-cell
+            div.weui-cell__bd
+              input.weui-input(type="text", placeholder="请输入折扣")
+          div.weui-cell.upload-cell
+            div.upload
+              label 点击上传门头照片
+                input(type="file")
+          div.weui-cell.bd-none
+            div.upload
+              label 点击上传营业照片
+                input(type="file")
+
+        div.join-form-submit
+          button.btn-default 确认
+    +tp-toolbar2
+
+
